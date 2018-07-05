@@ -1,7 +1,17 @@
 <html lang="pt-br">
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121874094-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-121874094-1');
+		</script>
+
 		<meta charset="utf-8">
-		<link rel="canonical" href="http://www.percep.com.br" />
+		<link rel="canonical" href="https://www.percep.com.br" />
 		<link rel="stylesheet" type="text/css" href="landing.css">
 		<title>Percep 60-70 caracteres</title>
 		<meta name="description" content="texto de descrição para google +-150 caracteres">
@@ -13,7 +23,7 @@
 		<meta name="twitter:title" content="Page Title">
 		<meta name="twitter:description" content="Page description less than 200 characters">
 		<!-- Twitter summary card with large image must be at least 280x150px -->
-		<meta name="twitter:image:src" content="http://www.example.com/image.jpg">
+		<meta name="twitter:image:src" content="https://www.example.com/image.jpg">
 
 		<!-- Open Graph data -->
 		<meta property="og:title" content="Title Here" />
@@ -24,13 +34,31 @@
 		<meta property="og:site_name" content="Site Name, i.e. Moz" />
 		<meta property="fb:admins" content="Facebook numberic ID" />
 		
+		<!-- Facebook Pixel Code -->
+		<script>
+		  !function(f,b,e,v,n,t,s)
+		  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		  n.queue=[];t=b.createElement(e);t.async=!0;
+		  t.src=v;s=b.getElementsByTagName(e)[0];
+		  s.parentNode.insertBefore(t,s)}(window, document,'script',
+		  'https://connect.facebook.net/en_US/fbevents.js');
+		  fbq('init', '1698861493565869');
+		  fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		  src="https://www.facebook.com/tr?id=1698861493565869&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+
 	</head>
 
 	<body >
 		<div>
 			<div id="header">
-				<a href="http://www.percep.com.br"><img id="logopercep" src="images/logo-percep-horizontal.png" alt="marca percep composta por símbolo à esquerda e nome escrito à direita"></a>
-					<a class="aheader" href="https://m.me/tblteam"><p>Começar</p>
+				<a href="https://www.percep.com.br"><img id="logopercep" src="images/logo-percep-horizontal-beta.png" alt="marca percep composta por símbolo à esquerda e nome escrito à direita"></a>
+					<a class="aheader" href="https://m.me/percepbr"><p>Começar</p>
 						<img class="headerwhitemessenger" src="images/white-messenger.png" alt="logo em versão branca do Facebook Messenger">
 					</a>
 				</div>
@@ -39,7 +67,7 @@
 		<div id="section1">
 			<h1>Você tem ideia de como é percebido?</h1>
 			<div class="section1a">
-				<a class="section1" href="https://m.me/tblteam"><p>Começar com o Messenger</p>
+				<a class="section1" href="https://m.me/percepbr"><p>Começar com o Messenger</p>
 					<img class="section1whitemessenger" src="images/white-messenger.png" alt="logo em versão branca do Facebook Messenger">
 				</a>
 			</div>
@@ -49,11 +77,11 @@
 		<div id="section2">
 			<h2>O que é percep?</h2>
 				<p>
-					Todos possuem uma imagem e de alguma maneira se importam com ela. E se você pudesse saber aquilo que pensam de você?
+					Todos possuem uma imagem, e de alguma maneira, se importam com ela. E se você pudesse saber aquilo que pensam de você?
 				<br><br>
-					Percep é um chabot brasileiro que permite que pessoas troquem percepções sobre suas características anonimamente.
+					Percep é um chabot brasileiro que permite que pessoas troquem percepções anonimamente sobre os atributos delas.
 				<br><br>
-					Afinal, todo feedback é um presente.
+					Lembre-se de que todo feedback é um presente.
 				</p>
 		</div>
 
@@ -80,7 +108,7 @@
 			<div class="steps">
 				<img src="images/avatar-profile.svg" alt="avatar em flat design de um perfil humano">
 				<h3>Dê uma olhada no perfil</h3>
-				<p>Veja em quais características você e seus amigos se destacam</p>
+				<p>Veja em quais atributos você e seus amigos se destacam</p>
 			</div>
 
 			<div class="steps">
@@ -106,19 +134,22 @@
 
 		<div id="section5">
 			<h2>E aí, qual sua percepção?</h2>
-			<form id="gform" action="https://script.google.com/macros/s/AKfycbxggynp6lnAX6zRcd6w7kG6E-UXBP33n10X9E4vlQmaMY0GpVIA/exec" method="post" enctype="text/plain">
+			<!--<form id="gform" action="https://script.google.com/macros/s/AKfycbxggynp6lnAX6zRcd6w7kG6E-UXBP33n10X9E4vlQmaMY0GpVIA/exec" method="post" enctype="text/plain">-->
+			<form action="https://formspree.io/contato@percep.com.br" method="post" enctype="text/plain">
 				<input type="text" name="name" placeholder="Nome" maxlength="60" required/>
-				<input type="email" name="mail" placeholder="E-mail" maxlength="100" required/>
+				<input type="email" name="email" placeholder="E-mail" maxlength="100" required/>
 				<textarea type="text" name="message" placeholder="Mensagem" maxlength="2000" required/></textarea>
 				<button type="submit" name="enviar" onclick="">Enviar</button>
+				<!--<input type="hidden" name="_next" value="https://site.io/thanks.html" />-->
+				<input type="hidden" name="_language" value="pt-BR" />
 			</form>
 		</div>
 		
 		<div id="footer">
-			<a href="http://www.percep.com.br/termos"><img src="images/white-terms.png" alt="ícone em versão branca dos Termos e Política de Privacidade"></a>
-			<a href="https://m.me/tblteam"><img src="images/white-messenger.png" alt="logo em versão branca do Facebook Messenger"></a>
-			<a href="https://www.facebook.com/percep"><img src="images/white-facebook.png" alt="logo em versão branca do Facebook"></a>
-			<a href="https://www.twitter.com/percep_"><img src="images/white-twitter.png" alt="logo em versão branca do Twitter"></a>
+			<a href="https://www.percep.com.br/termos.html"><img src="images/white-terms.png" alt="ícone em versão branca dos Termos e Política de Privacidade"></a>
+			<a href="https://m.me/percepbr"><img src="images/white-messenger.png" alt="logo em versão branca do Facebook Messenger"></a>
+			<a href="https://www.facebook.com/percepbr"><img src="images/white-facebook.png" alt="logo em versão branca do Facebook"></a>
+			<a href="https://www.twitter.com/percepbr"><img src="images/white-twitter.png" alt="logo em versão branca do Twitter"></a>
 			<p>© Copyright 2018 Percep</p>
 		</div>
 </div>
