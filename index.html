@@ -135,11 +135,11 @@
 		<div id="section5">
 			<h2>E aí, qual sua percepção?</h2>
 			<!--<form id="gform" action="https://script.google.com/macros/s/AKfycbxggynp6lnAX6zRcd6w7kG6E-UXBP33n10X9E4vlQmaMY0GpVIA/exec" method="post" enctype="text/plain">-->
-			<form action="https://formspree.io/contato@percep.com.br" method="post">
+			<form action="https://formspree.io/contato@percep.com.br" method="POST">
 				<input type="text" name="nome" placeholder="Nome" maxlength="60" required/>
-				<input type="email" name="_replyto" placeholder="E-mail" maxlength="100" required/>
-				<textarea type="text" name="message" placeholder="Mensagem" maxlength="2000" required/></textarea>
-				<button type="submit" name="enviar">Enviar</button>
+				<input type="email" name="email" placeholder="E-mail" maxlength="100" required/>
+				<textarea name="message" placeholder="Mensagem" maxlength="2000" required/></textarea>
+				<button type="submit">Enviar</button>
 				<!--<input type="hidden" name="_next" value="https://site.io/thanks.html" />-->
 				<input type="hidden" name="_language" value="pt-BR" />
 			</form>
