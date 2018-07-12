@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121874094-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-121874094-1');
+		</script>
+
+		<script type="text/javascript">
+			var ua = navigator.userAgent.toLowerCase();
+			var uMobile = '';
+			// === REDIRECIONAMENTO PARA iPhone, Windows Phone, Android, etc. ===
+			// Lista de substrings a procurar para ser identificado como mobile WAP
+			uMobile = '';
+			uMobile += 'iphone;ipod;windows phone;android;iemobile 8';
+			// Sapara os itens individualmente em um array
+			v_uMobile = uMobile.split(';');
+			// percorre todos os itens verificando se eh mobile
+			var boolMovel = false;
+			for (i=0;i<=v_uMobile.length;i++){
+				if (ua.indexOf(v_uMobile[i]) != -1){
+					boolMovel = true;
+				}
+			}
+			if (boolMovel == true){
+				location.href='https://www.facebook.com/percepbr/posts/634411333599263';
+			}
+		</script>
+
+	<META http-equiv="refresh" content="0;URL=https://m.me/percepbr">
+		
+		<title>percep - Messenger</title>
+		<meta name="robots" content="noindex"/>
+
+</head>
+<body>
+teste desktop
+</body>
+</html>
