@@ -19,12 +19,14 @@ body {
 }
 
 #header{
-	position: absolute;
+	position: fixed;
 	height: 100px;
 	width: 100%;
 	box-shadow: 0 2px rgba(0,0,0,0.2);
 	margin: 0;
 	padding: 0;
+	z-index: 1;
+	background-color: white;
 }
 
 #logopercep{
@@ -307,6 +309,7 @@ button:hover{background-color: rgba(255, 80, 10, 0.7)}
 #footer{
 	position: absolute;
 	top: 3300px;
+	bottom: 0px;
 	height: 70px;
 	width: 100%;
 	background-color: rgb(255,80,10);
@@ -330,6 +333,62 @@ button:hover{background-color: rgba(255, 80, 10, 0.7)}
 	margin: 0px;
 }
 
+#terms{
+	font-family: "TimeBurner";
+	font-size: 36px;
+	text-align: center;
+	color: rgb(255, 80, 10);
+	position: relative;
+	top: 180px;
+	margin-left: 6.25%;
+	margin-right: 6.25%;
+}
+
+.item{
+	font-family: "Helvetica-Neue";
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	position: relative;
+	color: black;
+	margin-top: 60px;
+}
+
+#terms p{
+	font-family: "Helvetica-Neue";
+	font-size: 16px;
+	text-align: left;
+	position: relative;
+	color: black;
+}
+
+#termsfooter{
+	position: relative;
+	top: 240px;
+	height: 70px;
+	width: 100%;
+	background-color: rgb(255,80,10);
+}
+
+#termsfooter img{
+	position:relative;
+	top: 20px;
+	height: 30px;
+	margin-left: 6.25%;
+}
+
+#termsfooter p{
+	position: absolute;
+	font-family: "Helvetica-Neue";
+	font-size: 14px;
+	font-weight: lighter;
+	color: white;
+	top: 27px;
+	right: 6.25%;
+	margin: 0px;
+}
+
+
 }
 
 
@@ -348,12 +407,14 @@ body {
 }
 
 #header{
-	position: static;
+	position: fixed;
 	height: 80px;
 	width: 100%;
 	box-shadow: 0 2px rgba(0,0,0,0.2);
 	margin: 0;
 	padding: 0;
+	z-index: 1;
+	background-color: white;
 }
 
 #logopercep{
@@ -666,5 +727,61 @@ button{
 	width: 62.5%;
 	margin: 0px;
 }
+
+#terms{
+	font-family: "TimeBurner";
+	font-size: 36px;
+	text-align: center;
+	color: rgb(255, 80, 10);
+	position: relative;
+	top: 120px;
+	margin-left: 6.25%;
+	margin-right: 6.25%;
+}
+
+.item{
+	font-family: "Helvetica-Neue";
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	position: relative;
+	color: black;
+	margin-top: 60px;
+}
+
+#terms p{
+	font-family: "Helvetica-Neue";
+	font-size: 16px;
+	text-align: left;
+	position: relative;
+	color: black;
+}
+
+#termsfooter{
+	position: relative;
+	top: 180px;
+	height: 70px;
+	width: 100%;
+	background-color: rgb(255,80,10);
+}
+
+#termsfooter img{
+	position:relative;
+	top: 20px;
+	height: 30px;
+	margin-left: 6.25%;
+}
+
+#termsfooter p{
+	position: absolute;
+	font-family: "Helvetica-Neue";
+	font-size: 14px;
+	font-weight: lighter;
+	color: white;
+	top: 27px;
+	right: 6.25%;
+	margin: 0px;
+}
+
 
 }
