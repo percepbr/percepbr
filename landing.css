@@ -759,8 +759,8 @@ button{
 
 #termsfooter{
 	text-align: center;
-	position: absolute;
-	top: 4870px;
+	position: relative;
+	top: 180px;
 	height: 106px;
 	width: 100%;
 	background-color: rgb(255,80,10);
@@ -784,6 +784,5 @@ button{
 	width: 62.5%;
 	margin: 0px;
 }
-
 
 }
